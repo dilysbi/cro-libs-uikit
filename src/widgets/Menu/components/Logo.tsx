@@ -6,8 +6,8 @@ import Flex from "../../../components/Box/Flex";
 import { HamburgerIcon, HamburgerCloseIcon } from "../icons";
 import MenuButton from "./MenuButton";
 
-import logoPng from "../../../assets/images/logo/logo.png";
-import logoTextPng from "../../../assets/images/logo/logo-text.png";
+// import logoPng from "../../../assets/images/logo/logo.png";
+// import logoTextPng from "../../../assets/images/logo/logo-text.png";
 
 interface Props {
   isMobile: boolean;
@@ -56,9 +56,9 @@ const Logo: React.FC<Props> = ({ isMobile, isPushed, togglePush, isDark, href })
     <BoxImage isMobile={isMobile}>
       {/* <img src="/images/logo/logo-text.png" alt="logo" width={140} /> */}
       {isMobile ? (
-        <img src={logoPng} alt="logo" width={50} />
+        <img src='/images/logo/logo.png' alt="Logo" width={50} />
       ) : (
-        <img src={logoTextPng} alt="logo" width={210} />
+        <img src='/images/logo/logo-text.png' alt="Logo" width={290} />
       )}
     </BoxImage>
   );
